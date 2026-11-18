@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools — тренажёры и инструменты для китайского языка</title>
+<meta name="description" content="Интерактивные тренажёры и инструменты для изучения китайского языка: тренажёр пиньиня.">
+<style>
+  :root {
+    --bg: #eef2f0;
+    --surface: #fbfcfb;
+    --ink: #1f2a2e;
+    --muted: #5d6b70;
+    --line: #cfd9d5;
+    --seal: #b3302a;
+    --seal-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151c1f;
+      --surface: #1d272b;
+      --ink: #e8eeec;
+      --muted: #9aaaa9;
+      --line: #33423f;
+      --seal: #d2504a;
+      --seal-ink: #151c1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+  }
+  header { margin-bottom: 2.5rem; }
+  .han {
+    font-family: "Noto Serif SC", "Songti SC", "SimSun", "Microsoft YaHei", serif;
+    font-size: clamp(3rem, 12vw, 5.5rem);
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: .08em;
+  }
+  h1 {
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+    font-weight: 600;
+    margin: .5rem 0 .25rem;
+  }
+  header p { margin: 0; color: var(--muted); max-width: 52ch; }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 1rem;
+  }
+  a.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .15s, transform .15s;
+  }
+  a.card:hover { border-color: var(--seal); transform: translateY(-2px); }
+  a.card:focus-visible { outline: 3px solid var(--seal); outline-offset: 2px; }
+  .num {
+    flex: none;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: grid;
+    place-items: center;
+    background: var(--seal);
+    color: var(--seal-ink);
+    border-radius: 4px;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+  .label { font-size: 1.05rem; font-weight: 600; }
+  .back { margin: 0 0 1.5rem; }
+  .back a { color: var(--muted); text-decoration: none; }
+  .back a:hover { color: var(--seal); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  @media (prefers-reduced-motion: reduce) {
+    a.card { transition: none; }
+    a.card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="back"><a href="https://hanyulessons.github.io/">← На главную</a></p>
+  <header>
+    <p class="han" lang="zh">工具</p>
+    <h1>Tools</h1>
+    <p>Интерактивные тренажёры и инструменты для изучения китайского. Выберите инструмент.</p>
+  </header>
+
+  <ul>
+    <li><a class="card" href="vkb_universal_lesson.html"><span class="num">PY</span><span class="label">Тренажёр пиньиня</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
